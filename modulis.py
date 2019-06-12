@@ -5,7 +5,7 @@ import time
 # Import the ADS1x15 module.
 import Adafruit_ADS1x15
 
-import board
+
 import digitalio
 import adafruit_character_lcd.character_lcd as character_lcd
 import sys
