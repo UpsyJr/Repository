@@ -65,7 +65,7 @@ adc = Adafruit_ADS1x15.ADS1115()
 # instead of physical pin numbers
 def motorinit():
     GPIO.setmode(GPIO.BCM)
-    GPIO.setwarnings(True)  # Ignore warning for now
+    GPIO.setwarnings(False)  # Ignore warning for now
 
     # ENA PIN
     GPIO.setup(27, GPIO.OUT)
