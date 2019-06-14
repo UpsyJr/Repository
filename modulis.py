@@ -2,6 +2,7 @@
 # Author: Tony DiCola
 # License: Public Domain
 import time
+from time import sleep
 # Import the ADS1x15 module.
 import Adafruit_ADS1x15
 
