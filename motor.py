@@ -7,7 +7,7 @@ motor_pins = (17,18,27)
 GPIO.setwarnings(False)
 GPIO.setmode(GPIO.BOARD)
 # if we are defining more than one GPIO channel as I/O we have to use:
-GPIO.setup(motor_pins, GPIO.BCM)
+GPIO.setup(motor_pins, GPIO.OUT)
 
 motor_direction = int(input("choose motor direction 1,2,3: "))
 while True:
