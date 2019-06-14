@@ -5,7 +5,7 @@ import sys
 # assigning motor pins
 motor_pins = (17,18,27)
 GPIO.setwarnings(False)
-GPIO.setmode(GPIO.BOARD)
+GPIO.setmode(GPIO.BCM)
 # if we are defining more than one GPIO channel as I/O we have to use:
 GPIO.setup(motor_pins, GPIO.OUT)
 
