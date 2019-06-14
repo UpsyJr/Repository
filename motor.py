@@ -25,7 +25,7 @@ while True:
             GPIO.output(motor_pins, (GPIO.LOW, GPIO.LOW, GPIO.HIGH))
             sleep(0.02)
             GPIO.output(motor_pins, (GPIO.LOW, GPIO.HIGH, GPIO.LOW))
-            sleep(0.02)
+            sleep(0.001)
 
     # CTRL + C for keyboard interupt
 
