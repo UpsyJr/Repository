@@ -17,7 +17,7 @@ while True:
             GPIO.output(motor_pins, (GPIO.HIGH, GPIO.LOW, GPIO.LOW))
             GPIO.output(motor_pins, (GPIO.HIGH, GPIO.HIGH, GPIO.LOW))
             GPIO.output(motor_pins, (GPIO.LOW, GPIO.HIGH, GPIO.LOW))
-            sleep(0.02)
+            sleep(0.002)
         elif motor_direction == 2 :
             print("MOTOR is running anti-clock wise")
             GPIO.output(motor_pins, (GPIO.HIGH, GPIO.LOW, GPIO.LOW))
