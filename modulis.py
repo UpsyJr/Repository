@@ -495,7 +495,9 @@ def motor():
     while (count < kartsuk):
         GPIO.output(17, False)
         GPIO.output(17, True)
-        time.sleep(ttime)
+        #time.sleep(ttime) 
+        # motoro greitis?
+        sleep(0.02)
 
 
 # Raspberry Pi pin configuration:
