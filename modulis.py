@@ -122,7 +122,7 @@ def ciklas():
             # conversion (like by calling read_adc again) it will disable the
             # continuous conversion!
             # Sleep for half a second.
-            time.sleep(0.4)
+            time.sleep(0.02)
             if (value > 30) and (value < 100):
                 menu1()
             if (value > 9450) and (value < 10420):
@@ -140,7 +140,7 @@ def ciklas1():
             # conversion (like by calling read_adc again) it will disable the
             # continuous conversion!
             # Sleep for half a second.
-            time.sleep(0.4)
+            time.sleep(0.02)
 
             if (value > 30) and (value < 120):
                 if vid == 0:
