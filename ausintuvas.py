@@ -24,10 +24,10 @@ while True:
                 GPIO.output(22,True)
                 sleep(5)
         elif selection == 4:
+            sleep(4)
             GPIO.output(22,True)
-            sleep(10)
-            GPIO.output(22,False)
             sleep(3)
+            GPIO.output(22,False)
                 # ctrl + c for keyboard interupt
     except KeyboardInterrupt:
         selection = int(input("Input 3: "))
