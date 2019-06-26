@@ -12,20 +12,20 @@ selection = int(input("Choose mode 1 - 2 - 3: "))
 while True:
     try:
         if selection == 1:
-            for index in range(0,10):
+            for index in range(0,4):
                 GPIO.output(22, True)
                 sleep(5)
                 GPIO.output(22,False)
                 sleep(3)
         elif selection == 2:
-            for index in range(0,10):
+            for index in range(0,4):
                 GPIO.output(22, False)
                 sleep(5)
                 GPIO.output(22,True)
                 sleep(5)
-        else:
-            print("Invalid choice")
+                # ctrl + c for keyboard interupt
     except KeyboardInterrupt:
+        selection = int(input("Input 3: "))
         if selection == 3:
             print("exiting")
             sys.exit()
