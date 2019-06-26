@@ -8,7 +8,7 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setup(22, GPIO.OUT)  # we are using this pin to produce the light
 
 selection = int(input("Choose mode 1 - 2 - 3: "))
-
+index = 0
 while True:
     try:
         if selection == 1:
