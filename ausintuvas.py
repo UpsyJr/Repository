@@ -32,7 +32,7 @@ while True:
     except KeyboardInterrupt:
         selection = int(input("Input 3: "))
         if selection == 3:
-            GPIO.output(22, False)
+            GPIO.output(22, True)
             print("exiting")
             sys.exit()
 # GPIO.output(26, True) # the true is turning the lamp on false is off
