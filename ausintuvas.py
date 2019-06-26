@@ -12,28 +12,29 @@ selection = int(input("Choose mode 1 - 2 - 3: "))
 while True:
     try:
         if selection == 1:
-            for index in range(0,10):
+            while index < 10:
                 GPIO.output(22, True)
                 sleep(5)
-                GPIO.output(22,False)
+                GPIO.output(22, False)
                 sleep(3)
+                index += 1
         elif selection == 2:
-            for index in range(0,10):
+            while index < 10:
                 GPIO.output(22, False)
                 sleep(5)
-                GPIO.output(22,True)
+                GPIO.output(22, True)
                 sleep(5)
+                index += 1
         elif selection == 4:
-            GPIO.output(22,False)
+            GPIO.output(22, False)
             sleep(7)
-            GPIO.output(22,True)
+            GPIO.output(22, True)
             sleep(2)
-                # ctrl + c for keyboard interupt
+            # ctrl + c for keyboard interupt
     except KeyboardInterrupt:
         selection = int(input("Input 3: "))
         if selection == 3:
             GPIO.output(22, True)
             print("exiting")
             sys.exit()
-# GPIO.output(26, True) # the true is turning the lamp on false is off
-
+# GPIO.output(26, True) # the true is turning off the lamp on false is turning on
